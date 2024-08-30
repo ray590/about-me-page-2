@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- !DOCTYPE html tells browser this is using HTML5 -->
+<!-- EXAMPLE CODE HEADER/DISCLAIMER
+ 
+Project:  Project1-About Me
+Name: Raymond Werth
+Submitted: 8/30/2024
+ 
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
+ 
+Reflection (1-2 paragraphs):  
+
+I really enjoyed writing this program. This was a good way for me 
+to get back into web programming. I think all the tedious work that 
+had to be done is always good pratice so that way you learn to pay 
+attention to detail as you would in the real world. I'm looking forward 
+to learning anything new from this class in the upcoming weeks.
+ 
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Raymond Werth</title>
+    <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+    <header>
+        <h1 class="rw">Raymond Werth</h1>
+    </header>
+    
+    <section class="personal-info">
+		<h2>Personal Info</h2>
+        <img src="me-pic1.jpg" alt="Raymond Werth">
+        <ul>
+            <li><strong>Major:</strong> Software Development</li>
+            <li><strong>High School:</strong> American Preparatory Academy WV2, West Valley City, Utah. 2021</li>
+            <li><strong>Current year at UVU:</strong> Junior</li>
+            <li><strong>Favorite Ice Cream:</strong> Chocolate Ice Cream</li>
+        </ul>
+    </section>
+
+	<section class="fav-books">
+		<h2>My five favorite books</h2>
+		<ol class="book-list">
+			<li><em>The Pragmatic Programmer</em> by <a href="https://en.wikipedia.org/wiki/Andy_Hunt_(author)" target="_blank">Andrew Hunt</a> and <a href="https://en.wikipedia.org/wiki/Dave_Thomas_(programmer)" target="_blank">David Thomas</a></li>
+			<li><em>Code Complete</em> by <a href="https://www.stevemcconnell.com/" target="_blank">Steve McConnell</a></li>
+			<li><em>Design Patterns: Elements of Reusable Object-Oriented Software</em> by <a href="https://en.wikipedia.org/wiki/Erich_Gamma" target="_blank">Erich Gamma</a>, <a href="https://en.wikipedia.org/wiki/Richard_Helm_(computer_scientist)" target="_blank">Richard Helm</a>, <a href="https://en.wikipedia.org/wiki/Ralph_Johnson_(computer_scientist)" target="_blank">Ralph Johnson</a>, and <a href="https://en.wikipedia.org/wiki/John_Vlissides" target="_blank">John Vlissides</a></li>
+			<li><em>Refactoring: Improving the Design of Existing Code</em> by <a href="https://martinfowler.com/" target="_blank">Martin Fowler</a></li>
+			<li><em>Introduction to the Theory of Computation</em> by <a href="https://math.mit.edu/~sipser/" target="_blank">Michael Sipser</a></li>
+		</ol>
+	</section>
+
+
+    <section class="poem">
+        <h2>A Haiku I Wrote</h2>
+        <p>My passion for motorsports:<br>
+			Engines roar, heart soars<br>
+			Freedom in the shifting gears<br>
+			Thrill worth all the toil<br>
+		</p>
+    </section>
+	
+	<section class="interests">
+        <h2>Personal interests</h2>
+		<p class="indented">Something that I find fascinating is motorsports. 
+		I got into this when I was 10 years old, riding my dirt bike. 
+		This passion has stayed with me throughout my life. The sound 
+		of the motor, shifting gears, and being in control all gave me 
+		a sense of freedom to be myself. You also learn to take care of 
+		your equipment, as dirt bikes require a lot of maintenance. When 
+		you do your part, the bike does its part.
+		</p>
+		
+		<p class="indented">I mention dirt bikes primarily because that’s where 
+		I started and what got me into motorsports. However, since then, I’ve ridden 
+		various exciting vehicles such as four-wheelers, UTVs, jet skis, 
+		stand-up jet skis, and boats. I even enjoy towing long distances. 
+		Engaging in these activities brings me happiness, and I believe 
+		everyone should experience them at some point. The adrenaline from 
+		these motorsports is incredible. Although it requires a lot of work 
+		to get started, the thrill of the moment makes it all worth it.</p>
+    </section>
+
+	<section class="class-schedule">
+		<h2>Class Schedule</h2>
+		<table border="1" cellpadding="3" cellspacing="3">
+			<tr>
+				<th>Time</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+			</tr>
+		
+			<tr>
+				<td>8:30 AM - 9:00 AM</td>
+				<td rowspan="3">Wake Up/Breakfast/Getting Ready</td>
+				<td rowspan="19">Work</td> 
+				<td rowspan="3">Wake Up/Breakfast/Getting Ready</td>
+				<td rowspan="19">Work</td> 
+				<td rowspan="6">Work</td>
+			</tr>
+			<tr>
+				<td>9:00 AM - 9:30 AM</td>
+			</tr>
+			<tr>
+				<td>9:30 AM - 10:00 AM</td>
+			</tr>
+			<tr>
+				<td>10:00 AM - 10:30 AM</td>
+				<td rowspan="3">Web Programming I (Online)</td>
+				<td rowspan="3">Web Programming I (Online)</td>
+			</tr>
+			<tr>
+				<td>10:30 AM - 11:00 AM</td>
+			</tr>
+			<tr>
+				<td>11:00 AM - 11:30 AM</td>
+			</tr>
+			<tr>
+				<td>11:30 AM - 12:00 PM</td>
+				<td>Lunch</td>
+				<td>Lunch</td>
+				<td rowspan="2">Lunch</td>
+			</tr>
+			<tr>
+				<td>12:00 PM - 12:30 PM</td>
+				<td rowspan="2">Commute to UVU</td>
+				<td rowspan="2">Commute to UVU</td>
+			</tr>
+			<tr>
+				<td>12:30 PM - 1:00 PM</td>
+				<td rowspan="15">Relax/Homework</td>
+			</tr>
+			<tr>
+				<td>1:00 PM - 1:30 PM</td>
+				<td rowspan="3">C++ Programming I</td>
+				<td rowspan="3">C++ Programming I</td>
+			</tr>
+			<tr>
+				<td>1:30 PM - 2:00 PM</td>
+			</tr>
+			<tr>
+				<td>2:00 PM - 2:30 PM</td>
+			</tr>
+			<tr>
+				<td>2:30 PM - 3:00 PM</td>
+				<td rowspan="3">Homework & Coffee</td>
+				<td rowspan="3">Homework & Coffee</td>
+			</tr>
+			<tr>
+				<td>3:00 PM - 3:30 PM</td>
+			</tr>
+			<tr>
+				<td>3:30 PM - 4:00 PM</td>
+			</tr>
+			<tr>
+				<td>4:00 PM - 4:30 PM</td>
+				<td rowspan="3">Computer Networks I</td>
+				<td rowspan="3">Computer Networks I</td>
+			</tr>
+			<tr>
+				<td>4:30 PM - 5:00 PM</td>
+			</tr>
+			<tr>
+				<td>5:00 PM - 5:30 PM</td>
+			</tr>
+			<tr>
+				<td>5:30 PM - 6:00 PM</td>
+				<td  rowspan="3">Intermediate Academic Writing</td>
+				<td  rowspan="3">Intermediate Academic Writing</td>
+			</tr>
+			<tr>
+				<td>6:00 PM - 6:30 PM</td>
+				<td rowspan="2">Commute to Home</td>
+				<td rowspan="2">Commute to Home</td>
+			</tr>
+			<tr>
+				<td>6:30 PM - 7:00 PM</td>
+			</tr>
+			<tr>
+				<td>7:00 PM - 7:30 PM</td>
+				<td rowspan="2">Commute to Home</td>
+				<td rowspan="2">Relax/Homework</td>
+				<td rowspan="2">Commute to Home</td>
+				<td rowspan="2">Relax/Homework</td>
+			</tr>
+			<tr>
+				<td>7:30 PM - 8:00 PM</td>
+			</tr>
+		</table>
+	</section>
+</body>
+</html>
