@@ -2,9 +2,9 @@
 <!-- !DOCTYPE html tells browser this is using HTML5 -->
 <!-- EXAMPLE CODE HEADER/DISCLAIMER
  
-Project:  Project1-About Me
+Project:  Project2-About Me
 Name: Raymond Werth
-Submitted: 8/30/2024
+Submitted: 9/20/2024
  
 I declare that the following source code was written by me, or provided
 by the instructor for this project. I understand that copying source
@@ -13,37 +13,35 @@ or leaving my code on a public web site constitutes cheating.
 I acknowledge that  If I am found in violation of this policy this may result
 in a zero grade, a permanent record on file and possibly immediate failure of the class.
  
-Reflection (1-2 paragraphs):  
-
-I really enjoyed writing this program. This was a good way for me 
-to get back into web programming. I think all the tedious work that 
-had to be done is always good pratice so that way you learn to pay 
-attention to detail as you would in the real world. I'm looking forward 
-to learning anything new from this class in the upcoming weeks.
- 
 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Raymond Werth</title>
-    <link rel="stylesheet" href="style.css?v=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="css/style.css?v=1">
 </head>
 <body>
     <header>
         <h1 class="rw">Raymond Werth</h1>
     </header>
+	
+	<hr>
     
-    <section class="personal-info">
-		<h2>Personal Info</h2>
-        <img src="me-pic1.jpg" alt="Raymond Werth">
+<section class="personal-info">
+    <h2>Personal Info</h2>
+    <div class="info-content">
         <ul>
             <li><strong>Major:</strong> Software Development</li>
-            <li><strong>High School:</strong> American Preparatory Academy WV2, West Valley City, Utah. 2021</li>
+            <li><strong>High School:</strong> American Preparatory Academy, West Valley City, Utah. 2021</li>
             <li><strong>Current year at UVU:</strong> Junior</li>
             <li><strong>Favorite Ice Cream:</strong> Chocolate Ice Cream</li>
         </ul>
-    </section>
+        <img src="img/me-pic1.jpg" alt="Raymond Werth">
+    </div>
+</section>
+
 
 	<section class="fav-books">
 		<h2>My five favorite books</h2>
@@ -91,14 +89,14 @@ to learning anything new from this class in the upcoming weeks.
 		<h2>Class Schedule</h2>
 		<table border="1" cellpadding="3" cellspacing="3">
 			<tr>
-				<th>Time</th>
+				<th></th>
 				<th>Monday</th>
 				<th>Tuesday</th>
 				<th>Wednesday</th>
 				<th>Thursday</th>
 				<th>Friday</th>
 			</tr>
-		
+    
 			<tr>
 				<td>8:30 AM - 9:00 AM</td>
 				<td rowspan="3">Wake Up/Breakfast/Getting Ready</td>
@@ -108,15 +106,15 @@ to learning anything new from this class in the upcoming weeks.
 				<td rowspan="6">Work</td>
 			</tr>
 			<tr>
-				<td>9:00 AM - 9:30 AM</td>
+        <td>9:00 AM - 9:30 AM</td>
 			</tr>
 			<tr>
 				<td>9:30 AM - 10:00 AM</td>
 			</tr>
 			<tr>
-				<td>10:00 AM - 10:30 AM</td>
-				<td rowspan="3">Web Programming I (Online)</td>
-				<td rowspan="3">Web Programming I (Online)</td>
+			<td>10:00 AM - 10:30 AM</td>
+				<td rowspan="3" data-course="web-programming">Web Programming I (Online)</td>
+				<td rowspan="3" data-course="web-programming">Web Programming I (Online)</td>
 			</tr>
 			<tr>
 				<td>10:30 AM - 11:00 AM</td>
@@ -141,8 +139,8 @@ to learning anything new from this class in the upcoming weeks.
 			</tr>
 			<tr>
 				<td>1:00 PM - 1:30 PM</td>
-				<td rowspan="3">C++ Programming I</td>
-				<td rowspan="3">C++ Programming I</td>
+				<td rowspan="3" data-course="cpp-programming">C++ Programming I</td>
+				<td rowspan="3" data-course="cpp-programming">C++ Programming I</td>
 			</tr>
 			<tr>
 				<td>1:30 PM - 2:00 PM</td>
@@ -163,8 +161,8 @@ to learning anything new from this class in the upcoming weeks.
 			</tr>
 			<tr>
 				<td>4:00 PM - 4:30 PM</td>
-				<td rowspan="3">Computer Networks I</td>
-				<td rowspan="3">Computer Networks I</td>
+				<td rowspan="3" data-course="computer-networks">Computer Networks I</td>
+				<td rowspan="3" data-course="computer-networks">Computer Networks I</td>
 			</tr>
 			<tr>
 				<td>4:30 PM - 5:00 PM</td>
@@ -174,8 +172,8 @@ to learning anything new from this class in the upcoming weeks.
 			</tr>
 			<tr>
 				<td>5:30 PM - 6:00 PM</td>
-				<td  rowspan="3">Intermediate Academic Writing</td>
-				<td  rowspan="3">Intermediate Academic Writing</td>
+				<td rowspan="3" data-course="academic-writing">Intermediate Academic Writing</td>
+				<td rowspan="3" data-course="academic-writing">Intermediate Academic Writing</td>
 			</tr>
 			<tr>
 				<td>6:00 PM - 6:30 PM</td>
@@ -195,7 +193,7 @@ to learning anything new from this class in the upcoming weeks.
 			<tr>
 				<td>7:30 PM - 8:00 PM</td>
 			</tr>
-		</table>
+			</table>
 	</section>
 </body>
 </html>
